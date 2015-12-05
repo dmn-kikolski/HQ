@@ -1,0 +1,35 @@
+<div class="dashboard-content-inner">
+  <h3>Products</h3>
+  <div class="well bs-component" ng-show="dataExists()">
+  <table class="table table-striped table-hover links">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Creator</th>
+        <th>Creation Date</th>
+        <th>State</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="o in objects">
+          <td>{{$index + 1}}</td>
+          <td>{{o.name}}</td>
+          <td>{{o.creator}}</td>
+          <td>{{o.creationDate}}</td>
+          <td>{{o.state}}</td>
+          <td>
+            <span><button ng-show="!o.isRunning" class="btn btn-primary btn-xs" ng-click="run($index)">Run</button></span>
+            <span><button class="btn btn-primary btn-xs" ng-click="details($index)">Details</button></span>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+    <div ng-if="!dataExists()" class="alert alert-dismissible alert-warning">
+      <h4>Warning!</h4>
+      <p>You do not have defined any projects</p>
+    </div>
+  <hq-button label="Create" right="CREATE_PROJECT" action="create()"></hq-button>
+</div>

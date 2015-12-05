@@ -1,0 +1,53 @@
+<div class="col-lg-6">
+    <div class="well bs-component">
+    <form class="form-horizontal">
+
+        <fieldset>
+          <legend>Basic Data:</legend>
+          <div class="form-group">
+            <label for="project-name" class="col-lg-2 control-label">Name:</label>
+            <div class="col-lg-10">
+              <input ng-model="name" class="form-control" id="object-name" placeholder="Name" type="text" ng-change="checkData()">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="object-desc" class="col-lg-2 control-label">Description:</label>
+            <div class="col-lg-10">
+              <textarea ng-model="desc" class="form-control" rows="3" id="textArea" ng-change="checkData()"></textarea>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+    </form>
+    <div class="well bs-component">
+        <fieldset>
+          <legend>Workflow:</legend>
+          <div class="form-group">
+            <label >Name:</label>
+            <select ng-model="templateIndex" class="form-control" id="select" ng-change="checkData()">
+              <option ng-repeat="template in workflowTemplates" value="{{$index}}">{{template.name}}</option>
+            </select>
+          </div>
+          <div class="form-group" ng-show="templateIndex !== undefined">
+            <label ng-show="workflowTemplates[templateIndex].description !== null">Description:</label>
+            <p class="text-primary">{{workflowTemplates[templateIndex].description}}</p>
+            <label>Creator:</label>
+            <p class="text-primary">{{workflowTemplates[templateIndex].creator.name}}</p>
+            <label>Creation date:</label>
+            <p class="text-primary">{{workflowTemplates[templateIndex].creationDate}}</p>
+            <label ng-show="workflowTemplates[templateIndex].editDate !== null">Edition date:</label>
+            <p class="text-primary">{{workflowTemplates[templateIndex].editionDate}}</p>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+</div>
+
+<div class="form-group">
+  <div class="col-lg-10">
+    <button class="btn btn-primary" ng-click="goToSecondStep()" ng-disabled="!isSecondStepAvailable">Next Step</button>
+    <button class="btn btn-primary" ng-click="back()">Back</button>
+  </div>
+</div>

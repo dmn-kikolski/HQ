@@ -1,0 +1,11 @@
+<div class="hq-flash"  ng-show="isVisible">
+  <div class="alert alert-dismissible"
+    ng-class="{
+      'alert-info': message.type === 1,
+      'alert-danger': message.type === -1,
+      'alert-warning': message.type === 2 ,
+      'alert-success': message.type === 0}">
+    <button type="button" class="close" ng-click="close()">×</button>
+    <strong>{{message.header}}</strong><br> {{message.content}}
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="col-lg-6">
+  <hq-error header="errorHeader" content="errorContent" is-visible="errorOccurred"></hq-error>
+  <div class="well bs-component">
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>Create User:</legend>
+        <p class="text-primary">Password will be generated automaticaly and send via e-mail</p>
+          <div class="form-group">
+          <label for="first-name" class="col-lg-2 control-label">First Name:</label>
+          <div class="col-lg-10">
+            <input ng-model="newUser.firstName" class="form-control" placeholder="First Name" type="text" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="last-name" class="col-lg-2 control-label">Last Name:</label>
+          <div class="col-lg-10">
+            <input ng-model="newUser.lastName" class="form-control" placeholder="Last Name" type="text" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">E-mail:</label>
+          <div class="col-lg-10">
+            <input ng-model="newUser.email" class="form-control" placeholder="Email" type="text" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <button class="btn btn-primary" ng-click="save()">Save</button>
+            <button class="btn btn-primary" ng-click="back()">Back</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

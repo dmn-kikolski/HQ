@@ -1,0 +1,17 @@
+{"data":
+  [
+    {"name" : "profile", "state" : "dashboard.user-profile", "icon" : "fa fa-user"},
+
+    {"name" : "users", "state" : "dashboard.users-browse", "icon" : "fa fa-users"},
+
+    {"name" : "tasks", "state" : "dashboard.tasks-browse", "icon" : "fa fa-tasks"},
+
+    {"name" : "stats", "state" : "dashboard.stats-browse", "icon" : "fa fa-bar-chart"},
+
+    {"name" : "products", "state": "dashboard.objects-browse", "icon" : "fa fa-database"},
+
+    {"name" : "workflows", "state": "dashboard.workflows-browse", "icon" : "fa fa-exchange"},
+
+    {"name" : "logout", "state": "dashboard.logout", "icon" : "fa fa-power-off"}
+  ]
+}

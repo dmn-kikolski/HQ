@@ -1,0 +1,20 @@
+<div class="dashboard-content-inner">
+  <h3>Users</h3>
+    <hq-table ng-if="users.length > 0" data="users">
+        <hq-columns>
+          <hq-column title="First Name" field="firstName"/>
+          <hq-column title="Last Name" field="lastName"/>
+        </hq-columns>
+        <hq-actions>
+          <!-- <hq-action name="Edit" perform="edit"/> -->
+          <hq-action name="Delete" perform="delete"/>
+          <hq-action name="Details" perform="details"/>
+        </hq-actions>
+        <hq-body/>
+    </hq-table>
+    <div ng-if="users.length <= 0" class="alert alert-dismissible alert-warning">
+      <h4>Warning!</h4>
+      <p>Cannot find any user in the system</p>
+  </div>
+  <hq-button label="Create" right="CREATE_USER" action="create()"></hq-button>
+</div>

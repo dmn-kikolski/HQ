@@ -1,0 +1,16 @@
+<div class="col-lg-6">
+  <div class="well bs-component">
+    <h2>Task Details: </h2>
+    <h5>Summary:</h5><h3>{{task.summary}}</h3>
+    <h5>Performers:</h5><h3 ng-repeat="performer in performers">{{performer}}<br></h3>
+    <h5>Description:</h5><h3>{{task.description}}</h3>
+  </div>
+  <div class="well bs-component">
+    <h2>Product Information: </h2>
+    <h5>Name:</h5><h3>{{productDetails.name}}</h3>
+    <h5>Description:</h5><h3>{{productDetails.description}}</h3>
+    <h5>Creator:</h5><h3>{{productDetails.creator.name}}</h3>
+  </div>
+  <button class="btn btn-primary" ng-click="back()">Back</button>
+
+</div>

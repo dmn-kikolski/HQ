@@ -1,0 +1,11 @@
+<div class="hq-dashboard">
+  <aside class="hq-dashboard-main-menu">
+    <hq-vertical-menu hq-name="main" hq-select="changeState"/>
+  </aside>
+  <div class="hq-dashboard-main-content">
+    <div class="hq-dashboard-nested-view" ui-view></div>
+    <div class="hq-dashboard-encouragement" ng-show="justLogged()">
+      Click on the left menu to navigate..
+    </div>
+  </div>
+</div>

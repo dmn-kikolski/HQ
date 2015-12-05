@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/styles/main.css"/>
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/styles/animate.css"/>
+    <link rel="stylesheet" href="assets/styles/font-awesome.css"/>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css"/>
+    <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog.css"/>
+    <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog-theme-default.css"/>
+  </head>
+  <body ng-app="headquartersApp">
+    <div class="hq-main-content">
+      <hq-flash></hq-flash>
+      <div class="hq-main-view" ui-view></div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-date/src/date.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ngDialog/js/ngDialog.min.js"></script>
+    <script src="bower_components/cytoscape/dist/cytoscape.min.js"></script>
+    <script src="bower_components/cytoscape-cxtmenu/cytoscape-cxtmenu.js"></script>
+
+    <script src="modules/app.js"></script>
+    <script src="modules/enterpage/scripts/loginController.js"></script>
+    <script src="modules/enterpage/scripts/whatsNewController.js"></script>
+    <script src="modules/dashboard-core/scripts/dashboardCoreController.js"></script>
+    <script src="modules/dashboard-user-profile/scripts/userProfileController.js"></script>
+    <script src="modules/dashboard-objects/scripts/browseObjectsController.js"></script>
+    <script src="modules/dashboard-objects/scripts/createObjectController.js"></script>
+    <script src="modules/dashboard-objects/scripts/detailsObjectController.js"></script>
+    <script src="modules/dashboard-users/scripts/browseUsersController.js"></script>
+    <script src="modules/dashboard-users/scripts/userDetailsController.js"></script>
+    <script src="modules/dashboard-users/scripts/createUserController.js"></script>
+    <script src="modules/dashboard-tasks/scripts/browseTasksController.js"></script>
+    <script src="modules/dashboard-tasks/scripts/detailsTaskController.js"></script>
+    <script src="modules/dashboard-workflows/scripts/browseWorkflowsController.js"></script>
+    <script src="modules/dashboard-workflows/scripts/createWorkflowController.js"></script>
+    <script src="modules/dashboard-workflows/scripts/detailsWorkflowController.js"></script>
+    <script src="modules/dashboard-workflows/scripts/editWorkflowController.js"></script>
+    <script src="modules/dashboard-stats/scripts/statsController.js"></script>
+    <script src="modules/services/authenticationService.js"></script>
+    <script src="modules/services/sessionService.js"></script>
+    <script src="modules/services/whatsNewService.js"></script>
+    <script src="modules/services/menuService.js"></script>
+    <script src="modules/services/reportService.js"></script>
+    <script src="modules/services/workflowsService.js"></script>
+    <script src="modules/services/buildGraphService.js"></script>
+    <script src="modules/services/validateGraphStructureService.js"></script>
+    <script src="modules/services/validateGraphMetadataService.js"></script>
+    <script src="modules/services/flashService.js"></script>
+    <script src="modules/services/usersService.js"></script>
+    <script src="modules/services/objectsService.js"></script>
+    <script src="modules/services/tasksService.js"></script>
+    <script src="modules/directives/hq-menu/dashboardMenuDirective.js"></script>
+    <script src="modules/directives/hq-tile/tileDirective.js"></script>
+    <script src="modules/directives/hq-error/errorDirective.js"></script>
+    <script src="modules/directives/hq-table/tableDirective.js"></script>
+    <script src="modules/directives/hq-graph/graphBoardDirective.js"></script>
+    <script src="modules/directives/hq-graph/graphDirective.js"></script>
+    <script src="modules/directives/hq-flash/flashDirective.js"></script>
+    <script src="modules/directives/hq-button/buttonDirective.js"></script>
+    <script src="modules/config/routes.js"></script>
+    <script src="modules/constants/constants.js"></script>
+    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+</body>
+</html>

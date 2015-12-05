@@ -1,0 +1,63 @@
+<div>
+  <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" data-target ="#collapseOne" class="link-in-task-properties">General</a>
+                  </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                      <!--General Body -->
+                      <label class="control-label">Summary</label>
+                      <input ng-model="$parent.element.data.metadata.summary" class="form-control" type="text" ng-change="$parent.forceNodeUpdate()"><br>
+                      <label class="control-label">Description</label>
+                      <textarea ng-model="$parent.element.data.metadata.description" class="form-control" rows="3" id="textArea"></textarea>
+                      <label class="control-label">Deadline</label><br>
+                      <div class='input-group date' id='datetimepicker1'>
+                        <input ng-model="$parent.element.data.metadata.deadline" type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" data-target ="#collapseTwo" class="link-in-task-properties">Users</a>
+                  </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <label class="control-label">Assign Users</label>
+                    <div ng-repeat="user in $parent.availableUsers" class="checkbox">
+                      <label>
+                        <input type="checkbox" ng-click="$parent.taskManageAssignee($index, user._id)" ng-checked="$parent.taskIsUserAssigned($index, user._id)"> {{user.firstName}} {{user.lastName}}
+                      </label>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" data-target ="#collapseThree" class="link-in-task-properties">Evaluation</a>
+                  </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                      <!--Evaluating script -->
+                      <label for="textArea" class="control-label">Script</label>
+                      <textarea ng-model="$parent.element.data.metadata.script" class="form-control" rows="6"></textarea>
+                  </div>
+              </div>
+          </div>
+  </div>
+</div>
+<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+</script>

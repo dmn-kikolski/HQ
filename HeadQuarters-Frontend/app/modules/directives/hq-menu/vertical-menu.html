@@ -1,0 +1,7 @@
+<div class="hq-dashboard-main-menu-primary">
+    <ul class="nav nav-pills nav-stacked text-center">
+      <li ng-repeat="menuItem in menu" ng-class="{true: 'active'}[menuItem == selectedItem]">
+        <a ng-click="menuSelect(menuItem)"><span ng-class="menuItem.icon" style="font-size: 1.5em"></span><br/> {{menuItem.name}}</a>
+      </li>
+    </ul>
+	</div>

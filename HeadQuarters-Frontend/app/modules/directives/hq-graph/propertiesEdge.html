@@ -1,0 +1,22 @@
+<div>
+  <form class="form-horizontal">
+    <fieldset>
+      <legend>Transition properties:</legend>
+        <div class="radio">
+        <label>
+          <input ng-model="$parent.element.data.metadata.rule" value="success" type="radio" ng-click="$parent.edgeManageRules($parent.element.data.id)"
+            ng-checked="$parent.element.data.metadata.rule === 'success'">
+          Success
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input ng-model="$parent.element.data.metadata.rule" value="failure" type="radio" ng-click="$parent.edgeManageRules($parent.element.data.id)"
+            ng-checked="$parent.element.data.metadata.rule === 'failure'">
+          Failure
+        </label>
+      </div>
+    </fieldset>
+  </form>
+  <br>
+</div>

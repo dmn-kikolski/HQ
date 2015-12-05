@@ -1,0 +1,12 @@
+<div>
+  <div class="hq-edit-workflow-component-properties" ng-show="showProperties">
+    <div class="well bs-component">
+        <div ng-include="'modules/directives/hq-graph/propertiesNotification.html'" ng-show="propertiesType==='notification'"></div>
+        <div ng-include="'modules/directives/hq-graph/propertiesTask.html'" ng-show="propertiesType==='task'"></div>
+        <div ng-include="'modules/directives/hq-graph/propertiesEdge.html'" ng-show="propertiesType==='edge'"></div>
+        <div ng-include="'modules/directives/hq-graph/propertiesState.html'" ng-show="propertiesType==='stateChange'"></div>
+        <button type="button" class="btn btn-default width-150" ng-click="showProperties = false"><i class="fa fa-times"></i> Close</button>
+    </div>
+
+  </div>
+</div>

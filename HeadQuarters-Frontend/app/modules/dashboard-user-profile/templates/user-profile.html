@@ -1,0 +1,83 @@
+<div class="col-lg-6">
+  <div class="well bs-component">
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>User profile</legend>
+          <div class="form-group">
+          <label for="project-name" class="col-lg-2 control-label">Name:</label>
+            <h3 class="col-lg-10" ng-show="!isEditMode">{{profile.firstName}}</h3>
+          <div class="col-lg-10" ng-show="isEditMode">
+            <input ng-model="updatedProfile.firstName" class="form-control" placeholder="{{profile.firstName}}" type="text" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project-name" class="col-lg-2 control-label">Surename:</label>
+            <h3 class="col-lg-10" ng-show="!isEditMode">{{profile.lastName}}</h3>
+          <div class="col-lg-10" ng-show="isEditMode">
+            <input ng-model="updatedProfile.lastName" class="form-control" placeholder="{{profile.lastName}}" type="text" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project-name" class="col-lg-2 control-label">E-mail:</label>
+            <h3 class="col-lg-10" ng-show="!isEditMode">{{profile.email}}</h3>
+          <div class="col-lg-10" ng-show="isEditMode">
+            <input ng-model="updatedProfile.email" class="form-control"  placeholder="{{profile.email}}" type="email" readonly="true">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project-name" class="col-lg-2 control-label">Phone:</label>
+            <h3 class="col-lg-10" ng-show="!isEditMode">{{profile.phone}}</h3>
+          <div class="col-lg-10" ng-show="isEditMode">
+            <input ng-model="updatedProfile.phone" class="form-control" placeholder="{{profile.phone}}" type="text" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project-name" class="col-lg-2 control-label">Mobile phone:</label>
+            <h3 class="col-lg-10" ng-show="!isEditMode">{{profile.mobilePhone}}</h3>
+          <div class="col-lg-10" ng-show="isEditMode">
+            <input ng-model="updatedProfile.mobilePhone" class="form-control" placeholder="{{profile.mobilePhone}}" type="text" >
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <button class="btn btn-primary" ng-click="saveUserDetails()" ng-show="isEditMode">Save</button>
+            <button class="btn btn-primary" ng-click="cancel()" ng-show="isEditMode">Cancel</button>
+            <button class="btn btn-primary" ng-click="edit()" ng-show="!isEditMode">Edit</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+    <div class="well bs-component" ng-show="isEditMode">
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>Change password</legend>
+          <div class="form-group">
+          <label class="col-lg-2 control-label">Current password:</label>
+          <div class="col-lg-10" ng-show="isEditMode">
+            <input ng-model="changePassword.current" class="form-control" placeholder="..." type="password" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">New password:</label>
+          <div class="col-lg-10" ng-show="isEditMode">
+            <input ng-model="changePassword.new" class="form-control" placeholder="..." type="password" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project-name" class="col-lg-2 control-label">Repeat new password:</label>
+          <div class="col-lg-10" ng-show="isEditMode">
+            <input ng-model="changePassword.newRepeated" class="form-control" id="project-name" placeholder="..." type="password" >
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <button class="btn btn-primary" ng-click="savePasswordChange()" ng-show="isEditMode">Save</button>
+            <button class="btn btn-primary" ng-click="cancelPasswordChange()" ng-show="isEditMode">Cancel</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+</div>

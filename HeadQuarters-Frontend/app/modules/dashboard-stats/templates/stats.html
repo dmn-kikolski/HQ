@@ -1,0 +1,21 @@
+<div class="col-lg-6">
+  <div class="well bs-component">
+    <div class="form-group">
+      <label>Data:</label>
+      <select ng-model="downloadOption" class="form-control" id="select">
+        <option ng-repeat="option in downloadOptions" value="{{option}}">{{option}}</option>
+      </select>
+      <label>Format:</label>
+      <select ng-model="downloadFormat" class="form-control" id="select">
+        <option ng-repeat="format in downloadFormats" value="{{format}}">{{format}}</option>
+      </select>
+      <label ng-show="downloadFormat === 'TXT'">Divider:</label>
+      <input ng-show="downloadFormat === 'TXT'" ng-model="downloadDivider" class="form-control" type="text">
+      <label>Type:</label>
+      <select ng-model="downloadType" class="form-control" id="select">
+        <option ng-repeat="type in downloadTypes" value="{{type}}">{{type}}</option>
+      </select>
+    </div>
+  </div>
+  <button class="btn btn-primary" ng-disabled="disableButton()" ng-click="download()">Download</button>
+</div>

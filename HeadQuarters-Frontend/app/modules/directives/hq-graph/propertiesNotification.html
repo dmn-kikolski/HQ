@@ -1,0 +1,23 @@
+<form class="form-horizontal">
+<fieldset>
+  <legend>Notification properties:</legend>
+    <div class="form-group">
+    <label for="project-name" class="col-lg-2 control-label">Summary:</label>
+    <div class="col-lg-10">
+      <input ng-model="$parent.element.data.metadata.summary" class="form-control" id="notification-shortname" type="text" ng-change="$parent.forceNodeUpdate()">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="project-name" class="col-lg-2 control-label">Receivers</label>
+    <div class="col-lg-10">
+      <input ng-model="$parent.element.data.metadata.receivers" class="form-control" id="notification-receivers" placeholder="..." type="text" >
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="project-name" class="col-lg-2 control-label">Message:</label>
+    <div class="col-lg-10">
+      <textarea ng-model="$parent.element.data.metadata.message" id="notification-message" class="form-control" rows="4"></textarea>
+    </div>
+  </div>
+</fieldset>
+</form>

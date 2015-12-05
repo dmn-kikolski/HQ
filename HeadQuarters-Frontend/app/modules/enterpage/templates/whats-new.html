@@ -1,0 +1,10 @@
+<div class="col-lg-6">
+  <div class="well bs-component">
+    <div ng-repeat="release in releaseNotes" class="panel panel-default">
+      <div class="panel-heading">Release: {{release.date}}<br>version: {{release.version}}</div>
+      <div class="panel-body">
+        <p class="text-primary" ng-repeat="note in release.notes"><span class="glyphicon glyphicon-pushpin"></span> &Tab; {{note}},</br></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,240 @@
+.hq-main-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.table.links a{
+  margin-right: 1em;
+}
+
+.alert.alert-gap {
+  margin-top: 2em;
+}
+
+.btn.width-150 {
+  width: 150px;
+}
+
+.hq-error {
+  font-size: 48px;
+  width: 30%;
+  min-height: 150px;
+  position: fixed;
+  top: 5%;
+  right: 0;
+  z-index: 9999;
+}
+
+.hq-flash {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  width: 30%;
+}
+
+.hq-enterpage {
+  background: url("../images/enterpage-background3.jpg") no-repeat center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.hq-enterpage-home-content{
+  color: white;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  margin-top: 100px;
+  margin-left:25%;
+  margin-right:auto;
+}
+
+.hq-enterpage-form-content {
+  position: absolute;
+  width: 100%;
+}
+
+.hq-enterpage-home-content>h1{
+  font-size: 96px;
+  text-shadow: 8px 8px 8px #151515;
+}
+
+.hq-nested-view.ng-enter{
+    animation: fadeInLeft 1.5s;
+}
+
+.hq-nested-view.ng-leave{
+    animation: flipOutX 1s;
+}
+
+.hq-dashboard-nested-view.ng-enter{
+  animation: flipInX 1s;
+}
+
+.hq-dashboard {
+  background: #cfdee0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.hq-dashboard-encouragement{
+  margin-left: 20%;
+  margin-top: 20%;
+  font-size: 48px;
+  color: rgba(21, 21, 21, 0.5);
+}
+
+.hq-dashboard-main-menu {
+  width: 120px;
+  min-height: 100%;
+  position: fixed;
+  background: #081b29;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.hq-dashboard-main-content{
+  width: 90%;
+  margin-left: 130px;
+  poistion: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.hq-create-workflow-basic-data {
+  z-index: 1;
+}
+
+.hq-edit-workflow-component-properties {
+  z-index: 1;
+  min-height: 100%;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fafafa;
+}
+
+.hq-edit-workflow-component-properties-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.hq-create-workflow-basic-data-show-button {
+  top: 0;
+  left: 130px;
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hq-edit-workflow-component-properties-show-button {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.hq-edit-workflow-components-menu {
+  z-index: 2;
+  width: 50%;
+  position: fixed;
+  margin-left: 30%;
+  bottom: 0;
+}
+
+.hq-error.ng-hide-add{
+  animation: bounceOutRight 0.5s;
+}
+
+.hq-error.ng-hide-remove {
+  animation: shake 0.5s;
+}
+
+.hq-create-workflow-basic-data.ng-hide-add{
+  animation: bounceOutUp 1.5s;
+}
+
+.hq-create-workflow-basic-data.ng-hide-remove {
+  animation: bounceInDown 1.5s;
+}
+
+.hq-create-workflow-basic-data-show-button.ng-hide-add{
+  animation: bounceOutUp 1.5s;
+}
+
+.hq-create-workflow-basic-data-show-button.ng-hide-remove{
+  animation: bounceInDown 1.5s;
+}
+
+.hq-edit-workflow-component-properties.ng-hide-add {
+  animation: fadeOutRight 1.5s;
+}
+
+.hq-edit-workflow-component-properties.ng-hide-remove {
+  animation: fadeInRight 1.5s;
+}
+
+.hq-edit-workflow-component-properties-show-button.ng-hide-add {
+  animation: fadeOutRight 1.5s;
+}
+
+.hq-edit-workflow-component-properties-show-button.ng-hide-remove {
+  animation: fadeInRight 1.5s;
+}
+
+h5.underline {
+  text-decoration: underline;
+}
+
+.hq-graph-properties-state{
+  min-height: 400px;
+}
+
+.hq-modal-dialog {
+  font-size: 11px;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.popup-content {
+  margin-top: 20px;
+}
+
+.dialog-content-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-in-task-properties {
+  cursor: pointer;
+}
+
+#hq-graph {
+  min-height: 100%;
+  width: 95%;
+  border-left: 2px solid #006687;
+  position: absolute;
+  margin-left: -10px;
+  background: #ebebeb;
+}

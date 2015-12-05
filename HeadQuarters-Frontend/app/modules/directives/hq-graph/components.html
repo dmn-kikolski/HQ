@@ -1,0 +1,15 @@
+<div class="hq-edit-workflow-components-menu">
+  <div class="btn-group dropup">
+    <button type="button" class="btn btn-danger width-150" ng-class="{'disabled': transitionMode === true}"><i class="fa fa-asterisk"></i> Activity</button>
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false" ng-class="{'disabled': transitionMode === true}">
+      <span class="caret"></span>
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a ng-click="addTask()"><i class="fa fa-file"></i> Task</a></li>
+      <li><a ng-click="addNotification()"><i class="fa fa-paper-plane"></i> Notification</a></li>
+      <li><a ng-click="addState()"><i class="fa fa-cube"></i> State</a></li>
+    </ul>
+  </div>
+  <button type="button" class="btn btn-danger width-150" ng-click="addTransition()"><i class="fa fa-refresh"></i> Transition</button>
+</div>

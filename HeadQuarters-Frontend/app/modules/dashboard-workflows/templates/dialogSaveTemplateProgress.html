@@ -1,0 +1,8 @@
+<div class="popup-content">
+  <p ng-show="savingErrorOccured" class="text-danger">Some errors occurred during graph validation</span>
+  <div ng-class="{'progress progress-striped active': !savingErrorOccured, 'progress': savingErrorOccured}">
+  <div ng-class="{'progress-bar': !savingErrorOccured, 'progress-bar progress-bar-danger': savingErrorOccured, 'progress-bar progress-bar-success': completed}" ng-style="{'width': savingProgress}"></div>
+  </div>
+  <button ng-show="savingErrorOccured" class="btn btn-default" ng-click="showSaveTemplateErrors()"><i class="fa fa-info-circle"></i> Details</button>
+  <button ng-show="completed" class="btn btn-success" ng-click="goToWorkflows()"><i class="fa fa-info-exchange"></i> Go to Workflows</button>
+</div>
